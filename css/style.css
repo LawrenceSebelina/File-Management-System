@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.container-fluid img{
+    height: 4rem;
+    width: 4rem;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+}
+
+.navbar-brand{
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav li{
+    margin-left: 2rem;
+    font-weight: bold;
+    border: 0.3rem solid transparent;
+    text-align: center;
+}
+
+.navbar-nav li:hover{
+    border-bottom: 0.3rem solid rgba(240, 240, 18, 0.842);
+}
+
+.navbar .dropdown-menu{
+    background-color: rgba(240, 240, 18, 0.842);
+}
+
+.dropdown-menu li a{
+    font-weight: bold;
+}
+
+.dropdown-menu li a:hover{
+    background-color: #198754;
+    color: #fff;
+}
+
+.cvsu-banner{
+    background-image: url(../images/finalBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 37.5rem;
+    width: 100%;
+}
+
+.header-history{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.carousel-history .carousel-item img {
+    height: 30rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 0.2rem solid #198754;
+}
+
+.home-carousel .carousel-item img {
+    height: 30rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 0.2rem solid #198754;
+}
+
+.card-text {
+    text-indent: 3.125rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.deparment-img {
+    height: 7rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7rem;
+}
+  
+.history-sm a{
+    background-color: #198754;
+    color: #fff;
+}
+
+.history-sm a:hover{
+    background-color: rgba(240, 240, 18, 0.842);
+}
+
+.card-history{
+    background-image: url(../images/statue_cvsu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-history{
+    background-color: #fff;
+    opacity: 0.9;
+    font-weight: bold;
+    height: 100%;
+}
+
+.card-group .card{
+    height: 20rem;
+}
+
+.card-qp-cv img, .card-mission img, .card-vision img{ 
+    display: block;
+    width: 100%;
+    height: 20rem;
+    margin: auto;
+    border: 0.2rem solid rgb(11, 96, 35);
+}
+
+.text-qp-cv, .text-mission, .text-vision{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.card-qp-cv:hover .text-qp-cv, .card-mission:hover .text-mission, .card-vision:hover .text-vision{
+    opacity: 0.8;
+}
+  
+.text-qp-cv, .text-mission, .text-vision{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-qp-cv h5{
+    margin-top: 0.7rem;
+}
+
+.text-mission h5{
+    margin-top: 1.7rem;
+}
+
+.text-vision h5{
+    margin-top: 4.5rem;
+}
+  
+
+@media screen and (max-width: 61.875rem){
+    .navbar{
+        background-color: #198754;
+    }
+}
+
+
+@media screen and (min-width: 61.938rem){
+    .navbar.scrolled{
+        background-color: #198754;
+        transition: background-color 200ms linear;
+    }
+      
+    .navbar.scrolled .dropdown-toggle, .navbar.scrolled .sign-btn{
+        background-color: #fff;
+        color: #198754;  
+    }
+
+    .navbar.scrolled .dropdown-menu{
+        background-color: #198754;
+    }
+
+    .navbar.scrolled .dropdown-menu li a:hover{
+        background-color: rgba(240, 240, 18, 0.842);
+        color: #fff;
+    }
+    
+    .navbar.scrolled .dropdown-menu .dropdown-item{
+        color: #fff;
+        
+    }
+}
+  
+.cvsu-footer{
+    padding: 1.25rem 0;
+    background-color: #198754;
+    color: #4b4c4d;
+}
+
+.cvsu-footer .copyright{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.438rem;
+    color: #fff;
+    margin-bottom: 0;
+    clear: both;
+    font-weight: bold;
+}
+
+.footer-banner{
+    background-color: #198754;
+    opacity: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-banner img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-banner .right-logo{
+    height: 5rem;
+    width: 7rem;
+}
+
+.footer-banner .left-logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+.body{
+    position: relative;
+    margin: 3rem 0 0 0;
+    padding: 0 1rem;
+    transition: .5s;
+}
+
+.body a{
+    text-decoration: none;
+}
+
+.sidenav-header{
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: #F7F6FB;
+    z-index: 100;
+    transition: .5s;
+}
+
+.sidenav-toggle{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.sidenav-logo{
+    width: 2.188rem;
+    height: 2.188rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sidenav-logo img{
+    width: 2.5rem;
+    cursor: -webkit-pointer; 
+    cursor: pointer;
+}
+
+.sidenav-title{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sidenavbar-img{
+    width: 2.188rem;
+    height: 2.188rem;
+    position: absolute;
+}
+
+
+.sidenavbar-img{
+    height: 2.188rem;
+    position: absolute;
+}
+
+.sidenavbar{
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: 4.25rem;
+    height: 100%;
+    background-color: #198754;
+    padding: .5rem 1rem 0 0;
+    transition: .5s;
+    z-index: 100;
+}
+
+.sidenavbar-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.sidenavbar-logo,
+.sidenavbar-menu{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.sidenavbar-menu{
+    padding: .5rem 0 .5rem 1.5rem;
+}
+
+.sidenavbar-logo{
+    padding: .5rem 0 .5rem 1.150rem;
+}
+
+.sidenavbar-logo{
+    margin-bottom: 2rem;
+}
+
+.sidenavbar-icon{
+    font-size: 1.25rem;
+    color: #F7F6FB;
+}
+
+.sidenavbar-title{
+    color: #F7F6FB;
+    font-weight: 700;
+    margin-left: 3rem;
+}
+
+.sidenavbar-menu{
+    position: relative;
+    color: #AFA5D9;
+    margin-bottom: 1.5rem;
+    transition: .3s;
+}
+
+.sidenavbar-menu:hover{
+    color: #F7F6FB;
+}
+
+.nav-icon{
+    font-size: 1.25rem;
+}
+
+.show-sidenavbar{
+    left: 0;
+}
+
+.body-transform{
+    padding-left: 5.25rem;
+}
+
+.sidenavbar-menus .active{
+    color: #F7F6FB;
+}
+
+.sidenavbar-menus .active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0.125rem;
+    height: 2rem;
+    background-color: #F7F6FB;
+    box-sizing: border-box;
+}
+
+.main-content{
+    height: auto;
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 48rem){
+    .body{
+        margin: 4rem 0 0 0;
+        padding-left: 5.25rem;
+    }
+
+    .sidenav-header{
+        height: 4rem;
+        padding: 0 2rem 0 6.25rem;
+    }
+
+    .sidenav-logo{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .sidenav-logo img{
+        width: 2.813;
+    }
+
+    .sidenavbar{
+        left: 0;
+        padding: 1rem 1rem 0 0;
+    }
+
+    .show-sidenavbar{
+        width: 14rem;
+    }
+
+    .body-transform{
+        padding-left: 15rem;
+    }
+}
+
+.table td, .table th{
+    vertical-align: middle;
+}
+
+.dataTable th{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table.dataTable thead tr {
+    background-color: #198754;
+    color: #fff;
+}
+
+table.dataTable tfoot tr {
+    background-color: #fff;
+    color: #198754;
+}
+
+.pagination .page-item.active .page-link{ 
+    background-color: #198754; 
+}
+
+.pagination .page-item .page-link{ 
+    color: #198754;
+}
+
+table.display2 thead tr {
+    background-color: #0275d8;
+    color: #fff;
+}
+
+table.display2 tfoot tr {
+    background-color: #fff;
+    color: #0275d8;
+}
+
+#example2_paginate .pagination .page-item.active .page-link{ 
+    background-color: #0275d8; 
+    color: #fff;
+}
+
+#example2_paginate .pagination .page-item .page-link{ 
+    color: #0275d8;
+}
+
+.upload-photo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.preview-photo{
+    width: 15rem;
+    padding: 1rem;
+    background:#fff;
+    background-color: transparent;
+}
+
+.preview-photo img{
+    height: 6.25rem;
+    width: 6.25rem;
+    transform: translate(55%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.063rem solid rgb(124, 123, 123);
+    margin-bottom: 0.625rem;
+}
+
+.preview-photo input{
+    display: none;
+}
+
+.preview-photo label{
+    display: block;
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 12%;
+    line-height: 2.5rem;
+    text-align: center;
+    background: #1172c2;
+    color: #fff;
+    font-size: 0.938rem;
+    text-transform: Uppercase;
+    font-weight: 600;
+    border-radius: 0.313rem;
+    cursor: pointer;
+}
+
+.location{
+    background-image: url(../images/location.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.2rem solid #198754;
+}
